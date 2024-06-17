@@ -1,0 +1,86 @@
+/* Reset default browser margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Styling for the profile card */
+.profile-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+}
+
+.profile-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.profile-info a:hover {
+    text-decoration: underline;
+}
+
+.social-links a {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-links i {
+    font-size: 20px; /* Adjust the size of the icons */
+    color: black; /* Set the desired color for the icons */
+}
+
+.social-links img {
+    width: 21px; /* Set the width to match the icon size */
+    height: 21px; /* Set the height to match the icon size */
+    color: black; /* Match the color of the icons */
+    margin-bottom: 7px;
+}
+
+.social-links a .bi-github {
+    font-size: 22px; /* Increase the size of the GitHub icon */
+}
