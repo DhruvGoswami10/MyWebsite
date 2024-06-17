@@ -97,7 +97,7 @@ body {
     width: 21px; /* Set the width to match the icon size */
     height: 21px; /* Set the height to match the icon size */
     color: black; /* Match the color of the icons */
-    margin-bottom: 7px;
+    margin-bottom: 3px;
 }
 
 .social-links a .bi-github {
