@@ -13,21 +13,125 @@
     </head>
 
     <body>
-      <div class="profile-card">
-        <div class="profile-image">
-            <img src="pedro.gif" alt="Profile Picture">
-        </div>
-        <div class="profile-info">
-            <h2>Dhruv Goswami</h2>
-            <p>SWE, Concentrating in CS and AI</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/Dhruv-Goswami-24-"><i class="bi bi-linkedin"></i></a>
-                <a href="https://codepen.io/DhruvGoswami10"><img src="codepen1.png" alt="Codepen"></a>
-                <a href="https://github.com/DhruvGoswami10"><i class="bi bi-github" alt="Github"></i></a>
-                <a href="https://www.instagram.com/wizard.py/"><i class="bi bi-instagram"></i></a>
-                <a href="https://x.com/Dhruv_10_"><i class="bi bi-twitter-x"></i></a>
+        <main class="layout">
+            <button class="theme-toggle" type="button" id="theme-toggle">
+                <i class="bi bi-moon" aria-hidden="true"></i>
+                <span class="visually-hidden">Toggle theme</span>
+            </button>
+            <section class="profile-card">
+                <div class="profile-image">
+                    <img src="resources/me.jpg" alt="Portrait of Dhruv Goswami">
+                </div>
+                <div class="profile-info">
+                    <h1>Dhruv Goswami</h1>
+                    <p class="profile-tagline">Delusional CEO of Atlas Racing and trying to finish My degree.</p>
+                    <div class="social-links" aria-label="Social links">
+                        <a class="icon-link" href="https://www.linkedin.com/in/Dhruv-Goswami-24-" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin" aria-hidden="true"></i>
+                            <span class="visually-hidden">LinkedIn</span>
+                        </a>
+                        <a class="icon-link" href="https://github.com/DhruvGoswami10" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="bi bi-github" aria-hidden="true"></i>
+                            <span class="visually-hidden">GitHub</span>
+                        </a>
+                        <a class="icon-link" href="https://www.instagram.com/wizard.py/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                            <span class="visually-hidden">Instagram</span>
+                        </a>
+                        <a class="icon-link" href="https://x.com/Dhruv_10_" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)">
+                            <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                            <span class="visually-hidden">X (formerly Twitter)</span>
+                        </a>
+                    </div>
+                    <div class="projects">
+                        <h2 class="section-title">Projects</h2>
+                        <ul class="project-list">
+                            <li>
+                                <a class="project-link" href="https://tars-wizard-backup.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-stars" aria-hidden="true"></i>
+                                    <span>TARS Wizard Backup</span>
+                                    <i class="bi bi-box-arrow-up-right external-icon" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="project-link" href="https://www.atlasracing.ai/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-speedometer2" aria-hidden="true"></i>
+                                    <span>Atlas Racing</span>
+                                    <i class="bi bi-box-arrow-up-right external-icon" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="project-link" href="https://chromewebstore.google.com/detail/pebblepad-auto-save/cdlhkcmpgaflcdmcbhinaakkhflmibff" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-puzzle" aria-hidden="true"></i>
+                                    <span>PebblePad Auto Save</span>
+                                    <i class="bi bi-box-arrow-up-right external-icon" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="cv-button" href="resources/Dhruv-Goswami-2025.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+            </section>
+            <div class="feature-stack">
+                <aside class="feature feature--tars" data-feature="tars">
+                    <div class="feature-heading">
+                        <div class="feature-heading__title">
+                            <i class="bi bi-robot" aria-hidden="true"></i>
+                            <span>TARS live feed</span>
+                        </div>
+                        <span class="feature-heading__status">
+                            <span class="status-dot"></span>
+                            <span class="feature-heading__status-label">Online</span>
+                        </span>
+                    </div>
+                    <div class="tars-compose" aria-live="polite" aria-atomic="true">
+                        <img class="tars-avatar-image" src="resources/TARS%20the%20Wizard%20Patch.png" alt="TARS avatar">
+                        <div class="tars-compose__body">
+                            <div class="tars-compose__label">TARS is drafting</div>
+                            <div class="tars-compose__text">
+                                <span class="tars-compose__content" data-tars-compose></span>
+                                <span class="tars-compose__cursor" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <button class="tars-post-btn" type="button" data-tars-post-btn aria-hidden="true">
+                            <span>Post</span>
+                        </button>
+                    </div>
+                    <div class="tars-post" aria-live="polite">
+                        <div class="tars-post__header">
+                            <img class="tars-avatar-image tars-avatar-image--small" src="resources/TARS%20the%20Wizard%20Patch.png" alt="TARS avatar">
+                            <div class="tars-post__meta">
+                                <span class="tars-post__name">TARS</span>
+                                <span class="tars-post__handle">@bulkhead-bard</span>
+                                <span class="tars-post__time" data-tars-timestamp>| just now</span>
+                            </div>
+                        </div>
+                        <p class="tars-post__text" data-tars-output></p>
+                        <div class="tars-post__actions">
+                            <div class="tars-action" aria-hidden="true">
+                                <i class="bi bi-chat"></i>
+                                <span data-tars-comments>482</span>
+                            </div>
+                            <div class="tars-action" aria-hidden="true">
+                                <i class="bi bi-arrow-repeat"></i>
+                                <span data-tars-reposts>1.2K</span>
+                            </div>
+                            <div class="tars-action" aria-hidden="true">
+                                <i class="bi bi-heart"></i>
+                                <span data-tars-likes>42.4K</span>
+                            </div>
+                            <div class="tars-action" aria-hidden="true">
+                                <i class="bi bi-upload"></i>
+                                <span data-tars-shares>318</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </div>
-        </div>
-    </div>
+        </main>
+        <script src="script.js"></script>
     </body>
 </html>
